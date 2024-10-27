@@ -1,3 +1,58 @@
+@import url("https://use.typekit.net/pvo5zvb.css");
+
+.customHeader {
+  font-family: "bebas-neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: larger;
+}
+
+.drawerText {
+  color: #3c3c3c;
+}
+
+.pressImage {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.pressImage:hover {
+  opacity: 0.6;
+}
+
+.sidebar {
+  position: sticky;
+  top: 20%;
+  float: right;
+  margin-left: 0;
+  margin-top: 20%;
+  margin-right: 5%;
+}
+
+p {
+  font-family: "ballinger", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: large;
+}
+
+h1, h2, h3, p, td {
+  color: rgb(43, 43, 43);
+}
+
+.navLink {
+  box-shadow: inset 0 0 0 0 #6f6f6f;
+  color: #ffffff;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.navLink:hover {
+  box-shadow: inset 100px 0 0 0 #6f6f6f;
+  color: #3c3c3c;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
