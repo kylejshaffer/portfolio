@@ -6,7 +6,7 @@ import { Heading } from "@chakra-ui/react";
 function Experience() {
     return (
         <>
-        <Heading id="experience">Professional Experience</Heading>
+        <Heading id="experience-section">Professional Experience</Heading>
         <VerticalTimeline lineColor='black'>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"

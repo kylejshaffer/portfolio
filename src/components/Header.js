@@ -1,14 +1,26 @@
 import resume from "../assets/shaffer-resume.pdf";
-import { VStack, HStack } from '@chakra-ui/react';
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { Box, Link, VStack, HStack } from '@chakra-ui/react';
 
-const navItems = [
-    {id: 0, title: "ABOUT", path: "./"},
-    {id: 1, title: "PROJECTS", path: "projects"},
-    {id: 2, title: "EXPERIENCE", path: "experience"},
-    {id: 3, title: "RESUME", path: ""},
-]
+function SocialBar() {
+    const iconWidth = "24px";
+    return (
+        <HStack spacing={4} alignContent={"center"}>
+            <Link href="https://www.linkedin.com/in/kyle-shaffer-0b3a054a" target="_blank" rel="noreferrer"><FaLinkedin className={"socialLink"} size={iconWidth} /></Link>
+            <Link href="https://github.com/kylejshaffer" target="_blank" rel="noreferrer"><FaGithub className={"socialLink"} size={iconWidth} /></Link>
+            <Link href="mailto: kyle.james.shaffer@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope className={"socialLink"} size={iconWidth} /></Link>
+        </HStack>
+    );
+};
 
-const NavBar = () => {
+function NavBar() {
+    const navItems = [
+        {id: 0, title: "ABOUT", path: "./"},
+        {id: 1, title: "PROJECTS", path: "projects"},
+        {id: 2, title: "EXPERIENCE", path: "experience"},
+        {id: 3, title: "RESUME", path: ""},
+    ];
+
     const handleClick = (e) => {
         e.stopPropagation();
         e.nativeEvent.stopImmediatePropagation();
@@ -27,6 +39,7 @@ const NavBar = () => {
         <HStack
         align='center'
         spacing={6}
+        mb={4}
         >
             {navItems.map((n) => {
                 if (n.title !== "RESUME") {
@@ -51,15 +64,26 @@ const NavBar = () => {
                 }
             })}
         </HStack>
-        
     )
-}
+};
 
-const Header = () => {
+function Header() {
     return (
-        <VStack mt={4} mb={8}>
-            <NavBar/>
-        </VStack>
+        <Box
+        width="100%"
+        top={0}
+        left={0}
+        right={0}
+        translateY={0}
+        transitionProperty="transform"
+        transitionDuration=".3s"
+        transitionTimingFunction="ease-in-out"
+        >
+            <VStack mt={4} mb={8}>
+                <NavBar/>
+                <SocialBar />
+            </VStack>
+        </Box>
     );    
 }
 

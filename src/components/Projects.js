@@ -9,13 +9,13 @@ function ProjectCard({ heading, description, tools, screenshot, link }) {
     return (
         <Card align='center'variant='outline' maxW='sm'>
             <CardBody>
+                <Heading mb={2} align='center' size='md'>{heading}</Heading>
                 <Image
                 src={screenshot}
                 alt='Twitter app screenshot'
                 borderRadius='lg'
                 />
                 <Stack mt='6' spacing='3'>
-                <Heading size='md'>{heading}</Heading>
                 <Text>
                     {description}
                 </Text>
@@ -26,7 +26,7 @@ function ProjectCard({ heading, description, tools, screenshot, link }) {
             </CardBody>
             <Divider />
             <CardFooter>
-                <Button variant='outline' colorScheme='blue'>
+                <Button variant='outline' colorScheme='charcoal'>
                     <Link href={link}>Visit</Link>
                 </Button>
             </CardFooter>
@@ -52,8 +52,8 @@ function Projects() {
 
     },
     {
-        heading: "Seattle Band No Edits Single-Page Site",
-        description: "Single-page site for Seattle band No Edits.",
+        heading: "Seattle Band No Edits Site",
+        description: "Single-page site for Seattle band No Edits, promoting their most recent release We All End Up The Same.",
         tools: "React, JavaScript, ChakraUI",
         link: "https://noedits.vercel.app/",
         screenshot: bandpage,
@@ -61,8 +61,8 @@ function Projects() {
     }];
     return (
         <VStack mb={16}>
-        <Heading id="projects">Projects</Heading>
-        <Text textAlign={"center"} maxWidth={{sm: "90%", md: "40%"}}>
+        <Heading id="projects-section">Projects</Heading>
+        <Text textAlign={"center"} maxWidth={{sm: "90%", md: "50%"}}>
             Below, you can find some personal projects I've worked outline
             to develop my skills in frontend development. I've used tools ranging
             from React and ChakraUI to more specialized data visulaztion libraries
