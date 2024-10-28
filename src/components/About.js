@@ -16,7 +16,7 @@ function About() {
             </VStack>
             <Text textAlign={"center"} maxWidth={{sm: "90%", md: "50%"}}>
                 I'm an experienced Data Scientist based in Seattle looking to shift careers to a Frontend Developer role. 
-                I'm interested in data visualization, responsive design, and data-centric applications. With
+                I'm interested in data visualization, web and digital design, and data-centric applications. With
                 10 years of experience working in data science and machine learning at several
                 companies, I have a unique combination of skills including
                 working in-depth with various types of data and presenting information to users
