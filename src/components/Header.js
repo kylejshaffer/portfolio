@@ -1,4 +1,5 @@
-import { Box, VStack, HStack } from '@chakra-ui/react';
+import resume from "../assets/shaffer-resume.pdf";
+import { VStack, HStack } from '@chakra-ui/react';
 
 const navItems = [
     {id: 0, title: "ABOUT", path: "./"},
@@ -28,14 +29,26 @@ const NavBar = () => {
         spacing={6}
         >
             {navItems.map((n) => {
-                return (
-                    <a href={"#" + n.path}
-                     className="navLink"
-                     key={n.id}
-                     onClick={handleClick}>
-                    <p>{n.title}</p>
-                    </a>
-                )
+                if (n.title !== "RESUME") {
+                    return (
+                        <a href={"#" + n.path}
+                            className="navLink"
+                            key={n.id}
+                            onClick={handleClick}>
+                        <p>{n.title}</p>
+                        </a>
+                    )
+                } else {
+                    return (
+                        <a href={resume}
+                            className="navLink"
+                            key={n.id}
+                            target="_blank"
+                            rel="noreferrer">
+                        <p>{n.title}</p>
+                        </a>
+                    )
+                }
             })}
         </HStack>
         
@@ -44,20 +57,9 @@ const NavBar = () => {
 
 const Header = () => {
     return (
-        <Box
-        width="100%"
-        top={0}
-        left={0}
-        right={0}
-        translateY={0}
-        transitionProperty="transform"
-        transitionDuration=".3s"
-        transitionTimingFunction="ease-in-out"
-        >
-            <VStack>
-                <NavBar/>
-            </VStack>
-        </Box>
+        <VStack mt={4} mb={8}>
+            <NavBar/>
+        </VStack>
     );    
 }
 

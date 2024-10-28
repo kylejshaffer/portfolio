@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/pvo5zvb.css");
 
+* {
+  color: black;
+}
+
 .customHeader {
   font-family: "bebas-neue", sans-serif;
   font-weight: 600;
@@ -49,7 +53,7 @@ h1, h2, h3, p, td {
 }
 
 .navLink:hover {
-  box-shadow: inset 100px 0 0 0 #6f6f6f;
+  box-shadow: inset 110px 0 0 0 #dde0e1;
   color: #3c3c3c;
 }
 

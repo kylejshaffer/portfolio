@@ -2,7 +2,7 @@ import twitterapp from "../assets/twitter-app.png";
 import llmapp from "../assets/llm-app.png";
 import bandpage from "../assets/band-page.png";
 import { Card, CardBody, CardFooter, Divider, Button, Image, Stack, Heading, Text } from "@chakra-ui/react";
-import { SimpleGrid, Link } from '@chakra-ui/react';
+import { SimpleGrid, Link, VStack } from '@chakra-ui/react';
 
 function ProjectCard({ heading, description, tools, screenshot, link }) {
     console.log(heading);
@@ -26,7 +26,7 @@ function ProjectCard({ heading, description, tools, screenshot, link }) {
             </CardBody>
             <Divider />
             <CardFooter>
-                <Button variant='solid' colorScheme='blue'>
+                <Button variant='outline' colorScheme='blue'>
                     <Link href={link}>Visit</Link>
                 </Button>
             </CardFooter>
@@ -60,9 +60,15 @@ function Projects() {
 
     }];
     return (
-        <>
+        <VStack mb={16}>
         <Heading id="projects">Projects</Heading>
-        <SimpleGrid columns={3} spacing={4}>
+        <Text textAlign={"center"} maxWidth={{sm: "90%", md: "40%"}}>
+            Below, you can find some personal projects I've worked outline
+            to develop my skills in frontend development. I've used tools ranging
+            from React and ChakraUI to more specialized data visulaztion libraries
+            like D3.js, and I'm excited to learn more.
+        </Text>
+        <SimpleGrid columns={{sm: 2, md: 3}} spacing={4}>
             {projData.map(d => {
                 return <ProjectCard
                 heading={d.heading}
@@ -74,8 +80,7 @@ function Projects() {
             })
             }
         </SimpleGrid>
-        <Divider />
-        </>
+        </VStack>
     );
 };
 
