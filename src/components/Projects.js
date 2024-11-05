@@ -65,7 +65,7 @@ function Projects() {
         <Text textAlign={"center"} maxWidth={{sm: "90%", md: "50%"}}>
             Below, you can find some personal projects I've worked on
             to develop my skills in frontend development. I've used tools ranging
-            from <Link href="https://react.dev/" target="_blank" rel="noreferrer">React</Link> and
+            from <Link href="https://react.dev/" target="_blank" rel="noreferrer">React</Link> and 
             <Link href="https://www.chakra-ui.com/" target="_blank" rel="noreferrer">ChakraUI</Link> to more specialized data visualization libraries
             like <Link href="https://d3js.org/" target="_blank" rel="noreferrer">D3.js</Link>, and I'm excited to learn more.
         </Text>
