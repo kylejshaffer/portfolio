@@ -63,9 +63,9 @@ function Projects() {
         <VStack mb={16}>
         <Heading id="projects-section">Projects</Heading>
         <Text textAlign={"center"} maxWidth={{sm: "90%", md: "50%"}}>
-            Below, you can find some personal projects I've worked outline
+            Below, you can find some personal projects I've worked on
             to develop my skills in frontend development. I've used tools ranging
-            from React and ChakraUI to more specialized data visulaztion libraries
+            from React and ChakraUI to more specialized data visualization libraries
             like D3.js, and I'm excited to learn more.
         </Text>
         <SimpleGrid columns={{sm: 2, md: 3}} spacing={4}>
