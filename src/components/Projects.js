@@ -8,7 +8,7 @@ import { SimpleGrid, Link, VStack } from '@chakra-ui/react';
 function ProjectCard({ heading, description, tools, screenshot, link }) {
     console.log(heading);
     return (
-        <Card align='center'variant='outline' maxW='sm'>
+        <Card align='center'variant='outline' maxW='lg'>
             <CardBody>
                 <Heading mb={2} align='center' size='md'>{heading}</Heading>
                 <Image
