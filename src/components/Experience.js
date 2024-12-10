@@ -58,7 +58,7 @@ function Experience() {
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#f6f6f6', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #f6f6f6' }}
-                date="Dec 2018 - Sept 2020"
+                date="June 2016 - May 2017"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<IoBriefcaseSharp />}
                 >
