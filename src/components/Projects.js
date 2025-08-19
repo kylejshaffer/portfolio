@@ -1,6 +1,6 @@
 import twitterapp from "../assets/twitter-app.png";
 import llmapp from "../assets/llm-app.png";
-import bandpage from "../assets/band-page.png";
+import birdchat from "../assets/bird-chat.png";
 import climateapp from "../assets/climate-app.png";
 import { Card, CardBody, CardFooter, Divider, Button, Image, Stack, Heading, Text } from "@chakra-ui/react";
 import { SimpleGrid, Link, VStack } from '@chakra-ui/react';
@@ -37,6 +37,13 @@ function ProjectCard({ heading, description, tools, screenshot, link }) {
 
 function Projects() {
     const projData = [{
+        heading: "Bird Chat LLM App",
+        description: "Chat app for asking questions of RAG-LLM agent about ornithological blog posts.",
+        tools: "LangChain, Flask, React, REST APIs",
+        link: "https://bird-chat-app.vercel.app/",
+        screenshot: birdchat,
+    },
+    {
         heading: "Climate Dashboard",
         description: "Web app visualizing temperature and precipitation from 2000-24 in the U.S.",
         tools: "D3.js, JavaScript, CSS, HTML",
@@ -57,14 +64,6 @@ function Projects() {
         tools: "D3.js, JavaScript, CSS, HTML",
         link: "https://covid-sentiment-viz.vercel.app/",
         screenshot: twitterapp,
-
-    },
-    {
-        heading: "Seattle Band No Edits Site",
-        description: "Single-page site for Seattle band No Edits, promoting their most recent release We All End Up The Same.",
-        tools: "React, JavaScript, ChakraUI",
-        link: "https://noedits.vercel.app/",
-        screenshot: bandpage,
 
     }];
     return (
